@@ -69,6 +69,9 @@ export class EnumSchemaParser extends MonoSchemaParser {
       if (value === null) {
         return this.config.Ts.NullValue(value);
       }
+      if (this.schemaUtils.isConstantSchema(this.schema)) {
+        return keyType;
+      }
       if (
         keyType.includes(this.schemaUtils.getSchemaType({ type: "number" }))
       ) {
