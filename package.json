@@ -40,6 +40,7 @@
     "format:check": "biome format .",
     "lint": "biome check",
     "prepack": "tsup",
+    "prepare": "npm run build",
     "test": "vitest run"
   },
   "dependencies": {
