@@ -12,4 +12,9 @@ export default defineConfig({
   splitting: true,
   target: "node18",
   treeshake: true,
+  esbuildOptions: (options) => {
+    options.banner = {
+      js: '#!/usr/bin/env node',
+    };
+  },
 });
