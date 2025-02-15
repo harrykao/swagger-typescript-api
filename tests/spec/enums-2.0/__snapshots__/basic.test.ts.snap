@@ -15,6 +15,7 @@ exports[`basic > enums-2.0 1`] = `
 export interface ObjWithEnum {
   "prop-enum-nullable"?: 0 | 1 | 2 | 3 | 4 | 5 | null;
   "prop-enum"?: 0 | 1 | 2 | 3 | 4 | 5;
+  "const-matching-data-type"?: "number";
 }
 
 export enum XNullableEnum {
